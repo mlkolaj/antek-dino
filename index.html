@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino-Antek - Gra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-header">
+            <h1>🦖 Dino-Antek</h1>
+            <div class="score-display">
+                <span>Wynik: <span id="score">0</span></span>
+                <span id="high-score" style="margin-left: 20px;">Najlepszy wynik: 0</span>
+            </div>
+        </div>
+
+        <div id="gameContainer" class="game-container">
+            <div id="dino" class="dino"></div>
+            <div id="gameOver" class="game-over" style="display: none;">
+                <div class="game-over-content">
+                    <h2>PRZEGRAŁEŚ</h2>
+                    <p>Wynik: <span id="finalScore">0</span></p>
+                    <p class="restart-text">Spacja = restart</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p><strong>Sterowanie:</strong> Spacja / Kliknięcie / Strzałka w górę = Skok</p>
+            <p><strong>Cel:</strong> Unikaj kaktusów i zarabiaj punkty!</p>
+        </div>
+
+        <div class="credits">
+            <p>Grafiki kaktusów: Wikimedia Commons, licencja <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
